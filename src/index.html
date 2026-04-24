@@ -3,77 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Bianglala Group — Layanan Profesional & Terpercaya</title>
+  <meta name="description" content="Bianglala Group - Layanan paspor & visa terpercaya, perpustakaan kreasi, dan reseller mutiara autentik di Lombok. Terbaik & profesional se-Lombok.">
+  <meta name="keywords" content="paspor lombok, visa lombok, pengurusan paspor lombok barat, perpustakaan lombok, mutiara lombok, reseller mutiara, bianglala group, surya mega bianglala, arunika mega bianglala">
+  <meta name="author" content="Bianglala Group">
+  <meta name="geo.region" content="ID-NB">
+  <meta name="geo.placename" content="Lombok Barat">
+  <meta name="geo.position" content="-8.6595;116.1346">
+  <meta name="ICBM" content="-8.6595, 116.1346">
+  <meta name="language" content="id">
+  <meta name="revisit-after" content="2 days">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://bianglalagroup.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bianglalagroup.com/">
+  <meta property="og:title" content="Bianglala Group - Layanan Paspor, Visa, Perpustakaan & Mutiara Lombok">
+  <meta property="og:description" content="Jasa paspor & visa profesional, perpustakaan literasi, dan reseller mutiara autentik. Terbaik dan terpercaya di Lombok.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&auto=format">
 
-  <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bianglala Group - Layanan Profesional & Terpercaya di Lombok">
+  <meta name="twitter:description" content="Solusi paspor, visa, perpustakaan, dan mutiara Lombok. Nomor 1 di Lombok!">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&auto=format">
+
+  <title>Bianglala Group | Layanan Paspor, Visa, Perpustakaan & Mutiara Lombok - No.1 di Lombok</title>
+
+  <!-- Preload & Critical CSS -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
   
-  <!-- Font Awesome 6 -->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  <!-- Google Fonts: Inter + Playfair Display -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- Schema.org JSON-LD untuk rich snippet -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bianglala Group",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800",
+    "telephone": "+62895705410050",
+    "email": "bianglalasuryamega@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Intan L No B19, Gunung Sari",
+      "addressLocality": "Lombok Barat",
+      "addressRegion": "Nusa Tenggara Barat",
+      "postalCode": "83351",
+      "addressCountry": "ID"
+    },
+    "url": "https://bianglalagroup.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128"
+    },
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 09:00-16:00",
+    "sameAs": [
+      "https://www.instagram.com/bianglalagroup/",
+      "https://www.facebook.com/bianglalagroup"
+    ]
+  }
+  </script>
+  <style>
+    /* Non-critical deferred styles can be loaded but we embed to keep stable */
+    .bg-teal-50{background-color:#f0fdfa}
+    .text-teal-700{color:#0f766e}
+    .border-teal-200{border-color:#b2dfdb}
+    .rounded-2xl{border-radius:1rem}
+    .shadow-sm{box-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05)}
+    .hover\:bg-teal-100:hover{background-color:#ccfbf1}
+  </style>
 </head>
 <body>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/62895705410050" class="float-wa" target="_blank" rel="noopener noreferrer">
+<!-- FLOATING WHATSAPP optimized with preload icon -->
+<a href="https://wa.me/62895705410050?text=Halo%20Bianglala%20Group%2C%20saya%20butuh%20informasi%20layanan" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- NAVBAR -->
-<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-2 bg-white/95 border-b border-gray-100">
-  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 md:px-8 py-2">
-    <!-- Logo -->
-    <div class="flex items-center gap-2.5">
-      <i class="fas fa-fan text-2xl text-teal-700/60"></i>
-      <span class="font-bold text-xl tracking-tight playfair text-gray-800">Bianglala<span class="text-teal-700"> Group</span></span>
+<!-- NAVBAR - OPTIMIZED -->
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 border-b border-gray-100">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 md:px-8 py-3 md:py-4">
+    <!-- Logo Area - jarak lebih pas -->
+    <div class="flex items-center gap-3">
+      <img src="img/logo.png" alt="Bianglala Group" class="w-8 h-8 md:w-9 md:h-9 object-contain">
+      <span class="font-bold text-lg md:text-xl tracking-tight playfair text-gray-800">
+        Bianglala<span class="text-teal-700"> Group</span>
+      </span>
     </div>
     
-    <!-- Desktop Nav -->
-    <div class="hidden md:flex items-center gap-8 text-gray-600 font-medium">
-      <a href="#about" class="hover:text-teal-700 transition text-sm">Tentang</a>
-      <a href="#layanan" class="hover:text-teal-700 transition text-sm">Layanan</a>
-      <a href="#kontak" class="hover:text-teal-700 transition text-sm">Kontak</a>
-      <a href="https://wa.me/62895705410050" class="ml-2 flex items-center gap-2 bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-100 transition">
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-6 lg:gap-8 text-gray-600 font-medium">
+      <a href="#about" class="hover:text-teal-700 transition text-sm py-1">Tentang</a>
+      <a href="#layanan" class="hover:text-teal-700 transition text-sm py-1">Layanan</a>
+      <a href="#kontak" class="hover:text-teal-700 transition text-sm py-1">Kontak</a>
+      <a href="https://wa.me/62895705410050" class="flex items-center gap-2 bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-100 transition">
         <i class="fab fa-whatsapp"></i> Hubungi Kami
       </a>
     </div>
 
-    <!-- Mobile menu button -->
-    <button id="menu-btn" class="md:hidden text-2xl text-gray-600">
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-2xl text-gray-600 p-2 -mr-2" aria-label="Menu" aria-expanded="false">
       <i class="fas fa-bars"></i>
     </button>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-5 pb-5 pt-2 shadow-lg rounded-b-2xl mx-4">
-    <div class="flex flex-col space-y-3 text-gray-700">
-      <a href="#about" class="mobile-nav-link py-2 px-3 rounded-md font-medium"><i class="fas fa-info-circle mr-3 w-5 text-teal-600"></i> Tentang Kami</a>
-      <a href="#layanan" class="mobile-nav-link py-2 px-3 rounded-md font-medium"><i class="fas fa-briefcase mr-3 w-5 text-teal-600"></i> Layanan</a>
-      <a href="#kontak" class="mobile-nav-link py-2 px-3 rounded-md font-medium"><i class="fas fa-phone-alt mr-3 w-5 text-teal-600"></i> Kontak & Lokasi</a>
-      <div class="pt-3 mt-1 border-t border-gray-100">
-        <a href="https://wa.me/62895705410050" class="flex items-center gap-3 text-teal-700 bg-teal-50 p-3 rounded-xl">
-          <i class="fab fa-whatsapp text-xl"></i> <span>WhatsApp</span>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-5 pb-5 pt-3 shadow-xl rounded-b-2xl mx-4 mt-1">
+    <div class="flex flex-col space-y-2 text-gray-700">
+      <a href="#about" class="mobile-nav-link py-3 px-4 rounded-xl font-medium hover:bg-gray-50 transition">
+        <i class="fas fa-info-circle mr-3 w-5 text-teal-600"></i> Tentang Kami
+      </a>
+      <a href="#layanan" class="mobile-nav-link py-3 px-4 rounded-xl font-medium hover:bg-gray-50 transition">
+        <i class="fas fa-briefcase mr-3 w-5 text-teal-600"></i> Layanan
+      </a>
+      <a href="#kontak" class="mobile-nav-link py-3 px-4 rounded-xl font-medium hover:bg-gray-50 transition">
+        <i class="fas fa-phone-alt mr-3 w-5 text-teal-600"></i> Kontak & Lokasi
+      </a>
+      <div class="pt-2 mt-2 border-t border-gray-100">
+        <a href="https://wa.me/62895705410050" class="flex items-center gap-3 text-teal-700 bg-teal-50 p-3 rounded-xl hover:bg-teal-100 transition">
+          <i class="fab fa-whatsapp text-xl"></i> 
+          <span class="font-medium">WhatsApp</span>
         </a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- Hero Section -->
 <section class="min-h-screen flex flex-col md:flex-row items-center max-w-6xl mx-auto px-6 pt-32 pb-20 gap-12">
+
   <div class="flex-1 text-center md:text-left fade-up">
-    <!-- <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium mb-5">
-      <i class="fas fa-check-circle text-xs"></i> Terpercaya Sejak 2014
-    </div> -->
     <h1 class="text-4xl md:text-6xl font-bold playfair leading-tight text-gray-800 mb-5">
-      Lintas Layanan, <br><span class="text-teal-700">Cermat & Profesional</span>
+      Jasa Paspor & Visa Lombok <br>
+      <span class="text-teal-700">Terpercaya & Profesional</span>
     </h1>
+
     <p class="text-gray-500 max-w-lg mx-auto md:mx-0 text-base md:text-lg mb-8">
-      Jasa Paspor & Visa · Perpustakaan Kreasi · Reseller Mutiara Autentik
+      Layanan pengurusan paspor dan visa kerja di Lombok, perpustakaan swasta, serta reseller mutiara berkualitas dengan pelayanan cepat dan terpercaya.
     </p>
+
     <div class="flex flex-wrap gap-4 justify-center md:justify-start">
       <a href="https://wa.me/62895705410050" class="btn-primary text-white px-7 py-3 rounded-full font-semibold flex items-center gap-2 shadow-sm">
         <i class="fab fa-whatsapp"></i> Konsultasi Gratis
@@ -82,23 +157,25 @@
         Lihat Layanan <i class="fas fa-arrow-right text-sm"></i>
       </a>
     </div>
-    <div class="flex items-center gap-2 justify-center md:justify-start mt-8 text-sm text-gray-400">
-      <i class="fas fa-check-circle text-teal-500"></i>
-      <i class="fas fa-check-circle text-teal-500"></i>
-      <i class="fas fa-check-circle text-teal-500"></i>
-      <span class="ml-1"><i class="fas fa-users"></i> 200+ klien & mitra</span>
-    </div>
   </div>
 
   <div class="flex-1 flex justify-center fade-up delay-200">
     <div class="relative">
       <div class="absolute -inset-3 bg-teal-50/50 rounded-3xl -z-10"></div>
-      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&auto=format" 
-           class="rounded-2xl w-full max-h-[360px] md:max-h-[420px] object-cover shadow-sm"
-           alt="Layanan profesional">
+      <img 
+        src="img/hero.webp"
+        width="600"
+        height="420"
+        class="rounded-2xl w-full max-h-[360px] md:max-h-[420px] object-cover shadow-sm"
+        alt="Jasa paspor dan visa Lombok Bianglala Group"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high">
     </div>
   </div>
+
 </section>
+
 
 <!-- ABOUT -->
 <section id="about" class="max-w-4xl mx-auto px-6 py-20 text-center">
@@ -106,12 +183,12 @@
     <div class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold uppercase mb-3">
       <i class="fas fa-flag-checkered"></i> <span>Tentang Kami</span>
     </div>
-    <h2 class="text-3xl md:text-4xl playfair font-semibold text-gray-800 mb-6">Perjalanan & Dedikasi</h2>
+    <h2 class="text-3xl md:text-4xl playfair font-semibold text-gray-800 mb-6">Bianglala Group: <br>Terpercaya di Lombok & Sekitarnya</h2>
     <div class="bg-gray-50/60 p-7 rounded-2xl border border-gray-100 shadow-sm max-w-2xl mx-auto">
       <p class="text-gray-600 leading-relaxed">
-        Bianglala Group hadir sebagai ekosistem jasa yang hangat dan solutif. 
-        Kami menggabungkan profesionalitas dokumen (paspor & visa), ruang literasi yang hidup, serta koleksi mutiara berkualitas untuk reseller. 
-        Setiap layanan dikelola dengan prinsip kepercayaan, ketelitian, dan sentuhan lokal.
+        Sebagai <strong>ekosistem jasa terbaik di Lombok</strong>, Bianglala Group menghadirkan solusi pengurusan paspor & visa internasional, 
+        perpustakaan literasi modern, serta peluang usaha reseller mutiara autentik asli Lombok. Kami didukung PT Surya Mega Bianglala dan PT Arunika Mega Bianglala  
+        legal, profesional, dan mengedepankan kepercayaan.
       </p>
       <div class="flex justify-center gap-6 mt-6 text-teal-600 text-xl">
         <i class="fas fa-handshake"></i>
@@ -122,16 +199,15 @@
   </div>
 </section>
 
-<!-- LAYANAN -->
+<!-- LAYANAN Utama -->
 <section id="layanan" class="py-20 px-6 bg-gray-50/30">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-12 fade-up">
-      <h2 class="text-3xl md:text-4xl playfair font-semibold text-gray-800 mt-2">Layanan Utama Kami</h2>
+      <h2 class="text-3xl md:text-4xl playfair font-semibold text-gray-800 mt-2">Layanan Unggulan Bianglala Group</h2>
       <div class="w-16 h-0.5 bg-teal-200 mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-500 max-w-xl mx-auto mt-3">Solusi lengkap untuk perjalanan, literasi, dan investasi mutiara</p>
     </div>
-    
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Card 1 -->
       <div class="card-clean p-7 fade-up delay-100 bg-white rounded-2xl shadow-sm border border-gray-100">
         <div class="flex items-start gap-4">
           <div class="bg-teal-50 w-12 h-12 rounded-xl flex items-center justify-center text-teal-700 text-xl">
@@ -139,18 +215,16 @@
           </div>
           <div>
             <h3 class="text-xl playfair font-bold text-gray-800">PT Surya Mega Bianglala</h3>
-            <p class="text-teal-600 text-xs font-medium uppercase tracking-wide">mobilitas global</p>
+            <p class="text-teal-600 text-xs font-medium uppercase tracking-wide">MOBILITAS GLOBAL</p>
           </div>
         </div>
         <div class="mt-4 text-gray-600 text-sm leading-relaxed">
-          <p>Menyediakan layanan pengurusan paspor dan visa kerja untuk mendukung kebutuhan mobilitas tenaga kerja internasional.</p>
+          <p>Pengurusan paspor baru, percepatan, visa kerja, visa kunjungan, dan dokumen perjalanan untuk keperluan luar negeri. Kami terpercaya membantu tenaga kerja Indonesia dan pelaku bisnis. <strong>Layanan cepat & legalitas terjamin.</strong></p>
         </div>
         <div class="mt-5 pt-3 text-xs text-gray-400 border-t border-gray-100">
-          <i class="fas fa-shield-alt text-teal-500 mr-1"></i> Legalitas terjamin · Konsultasi personal
+          <i class="fas fa-shield-alt text-teal-500 mr-1"></i> Berizin · Klien dari seluruh Lombok
         </div>
       </div>
-
-      <!-- Card 2 -->
       <div class="card-clean p-7 fade-up delay-200 bg-white rounded-2xl shadow-sm border border-gray-100">
         <div class="flex items-start gap-4">
           <div class="bg-teal-50 w-12 h-12 rounded-xl flex items-center justify-center text-teal-700 text-xl">
@@ -158,19 +232,17 @@
           </div>
           <div>
             <h3 class="text-xl playfair font-bold text-gray-800">PT Arunika Mega Bianglala</h3>
-            <p class="text-teal-600 text-xs font-medium uppercase tracking-wide">literasi & kemilau alam</p>
+            <p class="text-teal-600 text-xs font-medium uppercase tracking-wide">LITERASI & KEMILAU ALAM</p>
           </div>
         </div>
         <div class="mt-4 text-gray-600 text-sm leading-relaxed">
-          <p>Berkiprah di bidang literasi melalui perpustakaan komunitas dan layanan baca digital, serta menjadi mitra resmi Mutiara Lombok dan program donasi buku.</p>
+          <p>Perpustakaan komunitas & digital, program donasi buku. Juga menjadi mitra resmi <strong>Mutiara Lombok</strong> premium untuk reseller seluruh Indonesia. Dapatkan mutiara kualitas ekspor dengan harga kompetitif.</p>
         </div>
         <div class="mt-5 pt-3 text-xs text-gray-400 border-t border-gray-100">
-          <i class="fas fa-hand-holding-heart text-teal-500 mr-1"></i> Open reseller · Kerjasama perpustakaan
+          <i class="fas fa-hand-holding-heart text-teal-500 mr-1"></i> Buka reseller · Kerjasama perpustakaan
         </div>
       </div>
     </div>
-    
-    <!-- Benefit badges clean -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 fade-up delay-300">
       <div class="bg-white rounded-xl p-3 text-center border border-gray-100 shadow-sm"><i class="fas fa-shield-alt text-teal-600 text-xl"></i><p class="text-xs font-medium mt-1 text-gray-600">Layanan Terpercaya</p></div>
       <div class="bg-white rounded-xl p-3 text-center border border-gray-100 shadow-sm"><i class="fas fa-headset text-teal-600 text-xl"></i><p class="text-xs font-medium mt-1 text-gray-600">Konsultasi 24/7</p></div>
@@ -180,64 +252,126 @@
   </div>
 </section>
 
-<!-- KONTAK -->
+<!-- KONTAK + LOKASI LOMBOK BARAT -->
 <section id="kontak" class="py-20 px-6">
   <div class="max-w-5xl mx-auto">
     <div class="text-center fade-up">
       <i class="fas fa-map-marker-alt text-3xl text-teal-600 mb-2"></i>
-      <h2 class="text-3xl playfair font-semibold text-gray-800">Hubungi Kami</h2>
+      <h2 class="text-3xl playfair font-semibold text-gray-800">Kantor Pusat Lombok Barat</h2>
       <div class="w-12 h-0.5 bg-teal-200 mx-auto my-3 rounded-full"></div>
-      <p class="text-gray-500 max-w-md mx-auto">Siap membantu dokumen perjalanan, perpustakaan, hingga peluang bisnis mutiara.</p>
+      <p class="text-gray-500 max-w-md mx-auto">Siap membantu dokumen perjalanan, perpustakaan, hingga peluang bisnis mutiara. Hubungi kami sekarang.</p>
     </div>
-    
     <div class="grid md:grid-cols-2 gap-8 mt-12">
-      <!-- Contact Info -->
       <div class="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 fade-up delay-100">
         <div class="space-y-5">
-          <div class="flex gap-4"><i class="fas fa-location-dot text-xl text-teal-600 mt-1 w-6"></i><div><h4 class="font-semibold text-gray-800">Kantor</h4><p class="text-gray-500 text-sm">Jl. Intan L No B19, Gunung Sari, Lombok Barat, NTB</p><p class="text-xs text-gray-400 mt-1"><i class="far fa-calendar-alt"></i> Senin–Sabtu (09.00 - 16.00)</p></div></div>
-          <div class="flex gap-4"><i class="fas fa-phone-alt text-xl text-teal-600 w-6"></i><div><p class="font-medium text-gray-800">+62 895-7054-10050</p><p class="text-xs text-gray-400">Telepon / WhatsApp</p></div></div>
+          <div class="flex gap-4"><i class="fas fa-location-dot text-xl text-teal-600 mt-1 w-6"></i><div><h4 class="font-semibold text-gray-800">Lokasi Strategis</h4><p class="text-gray-500 text-sm">Jl. Intan L No B19, Gunung Sari, Lombok Barat, NTB 83351</p><p class="text-xs text-gray-400 mt-1"><i class="far fa-calendar-alt"></i> Senin–Sabtu (09.00 - 16.00)</p></div></div>
+          <div class="flex gap-4"><i class="fas fa-phone-alt text-xl text-teal-600 w-6"></i><div><p class="font-medium text-gray-800">+62 895-7054-10050</p><p class="text-xs text-gray-400">Telepon / WhatsApp (Fast Response)</p></div></div>
           <div class="flex gap-4"><i class="fas fa-envelope text-xl text-teal-600 w-6"></i><p class="break-all text-gray-600">bianglalasuryamega@gmail.com</p></div>
-          <div><a href="https://wa.me/62895705410050" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:bg-teal-700 transition"><i class="fab fa-whatsapp"></i> Chat via WhatsApp</a></div>
+          <div><a href="https://wa.me/62895705410050?text=Halo%20Bianglala%20Group%2C%20saya%20butuh%20info%20paspor%2Fvisa%2Fmutiara" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:bg-teal-700 transition"><i class="fab fa-whatsapp"></i> Chat via WhatsApp</a></div>
         </div>
       </div>
-      
-      <!-- Quick Form -->
       <div class="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 fade-up delay-200">
-        <h3 class="font-semibold text-xl playfair text-gray-800"><i class="fas fa-pen-alt mr-2 text-teal-600"></i>Kirim pesan cepat</h3>
-        <p class="text-sm text-gray-400 mb-4"><i class="far fa-clock"></i> Kami balas dalam 1x24 jam</p>
-        <form class="space-y-4">
-          <input type="text" placeholder="Nama lengkap" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition">
-          <input type="email" placeholder="Email / No. WA" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition">
-          <textarea rows="2" placeholder="Butuh layanan? (Paspor / Mutiara / Perpustakaan)" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition"></textarea>
-          <button type="button" class="bg-gray-800 hover:bg-teal-700 text-white w-full py-3 rounded-xl transition flex gap-2 justify-center items-center"><i class="fas fa-paper-plane"></i> Kirim Pertanyaan</button>
-          <p class="text-center text-xs text-gray-400"><i class="fas fa-info-circle"></i> Demo form, akan diarahkan ke WhatsApp</p>
+        <h3 class="font-semibold text-xl playfair text-gray-800"><i class="fas fa-paper-plane mr-2 text-teal-600"></i>Kirim Pertanyaan</h3>
+        <p class="text-sm text-gray-400 mb-4">Respon cepat, tim kami siap membantu Anda</p>
+        <form id="quickForm" class="space-y-4">
+          <input type="text" id="nameInput" placeholder="Nama lengkap" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition" required>
+          <input type="tel" id="contactInput" placeholder="Nomor WhatsApp / Email" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition" required>
+          <textarea id="msgInput" rows="2" placeholder="Contoh: Saya butuh paspor kerja / info reseller mutiara" class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:border-teal-300 focus:bg-white outline-none transition"></textarea>
+          <button type="submit" class="bg-gray-800 hover:bg-teal-700 text-white w-full py-3 rounded-xl transition flex gap-2 justify-center items-center"><i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+          <p class="text-center text-xs text-gray-400"><i class="fas fa-lock"></i> Data aman, langsung terhubung ke CS kami</p>
         </form>
       </div>
     </div>
-    <div class="text-center text-gray-400 text-sm mt-10 fade-up delay-300"><i class="fas fa-tree"></i> Berbasis di Lombok Barat — melayani nasional & internasional</div>
+    <div class="text-center text-gray-400 text-sm mt-10 fade-up delay-300"><i class="fas fa-trophy text-teal-500 mr-1"></i> Berbasis di Lombok Barat melayani nasional & internasional | <strong>#1 Layanan Paspor & Visa Lombok</strong></div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-400 py-10 px-6 mt-8">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-    <div class="flex items-center gap-2"><i class="fas fa-fan text-teal-500 text-xl"></i><span class="font-semibold playfair text-white text-lg">Bianglala Group</span><p class="text-xs text-gray-500 ml-2 hidden md:block">| Menjembatani kebutuhan & kreasi</p></div>
-    <div class="flex gap-6 text-lg"><a href="#" class="hover:text-teal-400 transition"><i class="fab fa-instagram"></i></a><a href="#" class="hover:text-teal-400 transition"><i class="fab fa-facebook"></i></a><a href="#" class="hover:text-teal-400 transition"><i class="fas fa-envelope"></i></a></div>
-    <p class="text-xs"><i class="far fa-copyright"></i> 2026 Bianglala Group — kearifan lokal & profesionalitas</p>
+<!-- FOOTER - CLEAN & MODERN LAYOUT -->
+<footer class="bg-gray-900 text-gray-400 pt-12 pb-6 mt-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Grid Layout 3 Kolom -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-gray-800">
+      
+      <!-- Kolom 1: Brand -->
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-2 mb-3">
+          <img src="img/logo.png" alt="Bianglala Group Logo" class="w-8 h-8 object-contain">
+          <span class="font-semibold playfair text-white text-xl">Bianglala<span class="text-teal-400"> Group</span></span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Solusi paspor, visa, perpustakaan, dan mutiara terpercaya di Lombok. Melayani dengan integritas dan profesionalisme.
+        </p>
+      </div>
+      
+      <!-- Kolom 2: Quick Links -->
+      <div class="text-center md:text-left">
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Tautan Cepat</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-teal-400 transition">Tentang Kami</a></li>
+          <li><a href="#layanan" class="hover:text-teal-400 transition">Layanan</a></li>
+          <li><a href="#kontak" class="hover:text-teal-400 transition">Kontak & Lokasi</a></li>
+          <li><a href="https://wa.me/62895705410050" class="hover:text-teal-400 transition">WhatsApp</a></li>
+        </ul>
+      </div>
+      
+      <!-- Kolom 3: Kontak & Sosmed -->
+      <div class="text-center md:text-left">
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Hubungi Kami</h4>
+        <div class="space-y-2 text-sm">
+          <p class="flex items-center justify-center md:justify-start gap-2">
+            <i class="fab fa-whatsapp text-teal-400"></i> 
+            <a href="https://wa.me/62895705410050" class="hover:text-teal-400 transition">+62 895-7054-10050</a>
+          </p>
+          <p class="flex items-center justify-center md:justify-start gap-2">
+            <i class="fas fa-envelope text-teal-400"></i> 
+            <a href="mailto:bianglalasuryamega@gmail.com" class="hover:text-teal-400 transition">bianglalasuryamega@gmail.com</a>
+          </p>
+          <p class="flex items-center justify-center md:justify-start gap-2">
+            <i class="fas fa-map-marker-alt text-teal-400"></i> 
+            <span class="text-gray-500">Jl. Intan L No B19, Gunung Sari, Lombok Barat</span>
+          </p>
+        </div>
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start gap-4 mt-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="mailto:bianglalasuryamega@gmail.com" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
+            <i class="fas fa-envelope text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar: Copyright & Credit -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-6 text-xs">
+      <p class="text-gray-500">
+        <i class="far fa-copyright text-teal-500 mr-1"></i> 2026 Bianglala Group. All rights reserved.
+      </p>
+      <p class="text-gray-600">
+        Created by <a href="https://lombokweb.site" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 transition">Lombokweb.site</a>
+      </p>
+    </div>
   </div>
 </footer>
 
 <script>
   (function() {
+    // Mobile menu
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      menuBtn.addEventListener('click', () => {
+        const expanded = mobileMenu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', !expanded);
+      });
       document.querySelectorAll('#mobile-menu a').forEach(link => {
         link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
       });
     }
-
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -250,15 +384,13 @@
         }
       });
     });
-
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 20) navbar.classList.add('nav-scrolled');
       else navbar.classList.remove('nav-scrolled');
     });
-
-    // Intersection Observer for fade-up
+    // Intersection Observer fade-up
     const fades = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -275,6 +407,23 @@
         observer.unobserve(el);
       }
     });
+
+    // Form submit to WhatsApp
+    const form = document.getElementById('quickForm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('nameInput')?.value.trim() || '';
+        const contact = document.getElementById('contactInput')?.value.trim() || '';
+        const msg = document.getElementById('msgInput')?.value.trim() || '';
+        if (!name || !contact) {
+          alert('Mohon isi nama dan kontak (WA/Email)');
+          return;
+        }
+        const text = `Halo Bianglala Group,%0A%0ANama: ${encodeURIComponent(name)}%0AKontak: ${encodeURIComponent(contact)}%0APertanyaan: ${encodeURIComponent(msg)}%0A%0A_Mohon informasi lebih lanjut. Terima kasih._`;
+        window.open(`https://wa.me/62895705410050?text=${text}`, '_blank');
+      });
+    }
   })();
 </script>
 </body>
