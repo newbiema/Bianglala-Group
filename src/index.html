@@ -20,13 +20,13 @@
   <meta property="og:url" content="https://bianglalagroup.com/">
   <meta property="og:title" content="Bianglala Group - Layanan Paspor, Visa, Perpustakaan & Mutiara Lombok">
   <meta property="og:description" content="Jasa paspor & visa profesional, perpustakaan literasi, dan reseller mutiara autentik. Terbaik dan terpercaya di Lombok.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&auto=format">
+  <meta property="og:image" content="img/hero-637.webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bianglala Group - Layanan Profesional & Terpercaya di Lombok">
   <meta name="twitter:description" content="Solusi paspor, visa, perpustakaan, dan mutiara Lombok. Nomor 1 di Lombok!">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&auto=format">
+  <meta name="twitter:image" content="img/hero-637.webp">
 
   <title>Bianglala Group | Layanan Paspor, Visa, Perpustakaan & Mutiara Lombok - No.1 di Lombok</title>
 
@@ -34,18 +34,18 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
   
-  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/output.css">
-  <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo-64.webp" type="image/x-icon">
+  
   <!-- Schema.org JSON-LD untuk rich snippet -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Bianglala Group",
-    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800",
+    "image": "img/hero-637.webp",
     "telephone": "+62895705410050",
     "email": "bianglalasuryamega@gmail.com",
     "address": {
@@ -71,20 +71,28 @@
   }
   </script>
   <style>
-    /* Non-critical deferred styles can be loaded but we embed to keep stable */
+    /* Non-critical deferred styles */
     .bg-teal-50{background-color:#f0fdfa}
     .text-teal-700{color:#0f766e}
     .border-teal-200{border-color:#b2dfdb}
     .rounded-2xl{border-radius:1rem}
     .shadow-sm{box-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05)}
     .hover\:bg-teal-100:hover{background-color:#ccfbf1}
+    
+    /* Improved contrast for footer */
+    .footer-text-light { color: #d1d5db; }
+    .footer-text-medium { color: #9ca3af; }
   </style>
 </head>
 <body>
 
 <!-- FLOATING WHATSAPP optimized with preload icon -->
-<a href="https://wa.me/62895705410050?text=Halo%20Bianglala%20Group%2C%20saya%20butuh%20informasi%20layanan" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp">
-  <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/62895705410050?text=Halo%20Bianglala%20Group%2C%20saya%20butuh%20informasi%20layanan" 
+   class="float-wa" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   aria-label="Hubungi via WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
 
 <!-- NAVBAR - FULLY OPTIMIZED WITH RESPONSIVE IMAGES -->
@@ -92,7 +100,7 @@
   <div class="max-w-6xl mx-auto flex justify-between items-center px-6 md:px-8 py-3 md:py-4">
     <!-- Logo Area - Fully Optimized -->
     <div class="flex items-center gap-3">
-      <!-- Responsive logo with multiple sizes -->
+      <!-- Responsive logo with multiple sizes - FIXED: menggunakan logo-64.webp -->
       <img 
         src="img/logo-64.webp"
         srcset="img/logo-64.webp 64w, img/logo-128.webp 128w, img/logo-192.webp 192w"
@@ -175,35 +183,26 @@
       
       <!-- Responsive picture element untuk hero image -->
       <picture>
-        <!-- Ultra small phones (≤480px) -->
         <source 
           media="(max-width: 480px)" 
           srcset="img/hero-480.webp"
           width="480"
           height="320">
-        
-        <!-- Standard phones (≤640px) -->
         <source 
           media="(max-width: 640px)" 
           srcset="img/hero-640.webp"
           width="640"
           height="427">
-        
-        <!-- Tablets (≤768px) -->
         <source 
           media="(max-width: 768px)" 
           srcset="img/hero-768.webp"
           width="768"
           height="512">
-        
-        <!-- Small desktops/tablets landscape (≤1024px) -->
         <source 
           media="(max-width: 1024px)" 
           srcset="img/hero-1024.webp"
           width="1024"
           height="683">
-        
-        <!-- Default image for desktop -->
         <img 
           src="img/hero-637.webp"
           width="637"
@@ -217,10 +216,6 @@
     </div>
   </div>
 </section>
-
-<!-- Optional: Preload critical images for even faster loading -->
-<link rel="preload" as="image" href="img/logo-64.webp" imagesrcset="img/logo-64.webp 64w, img/logo-128.webp 128w" imagesizes="32px" fetchpriority="high">
-
 
 <!-- ABOUT -->
 <section id="about" class="max-w-4xl mx-auto px-6 py-20 text-center">
@@ -331,19 +326,20 @@
   </div>
 </section>
 
-<!-- FOOTER - CLEAN & MODERN LAYOUT -->
-<footer class="bg-gray-900 text-gray-400 pt-12 pb-6 mt-8">
+<!-- FOOTER - IMPROVED CONTRAST & ACCESSIBILITY -->
+<footer class="bg-gray-900 text-gray-300 pt-12 pb-6 mt-8">
   <div class="max-w-6xl mx-auto px-6">
     <!-- Grid Layout 3 Kolom -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-gray-800">
       
-      <!-- Kolom 1: Brand -->
+      <!-- Kolom 1: Brand - FIXED: kontras ditingkatkan -->
       <div class="text-center md:text-left">
         <div class="flex items-center justify-center md:justify-start gap-2 mb-3">
-          <img src="img/logo.png" alt="Bianglala Group Logo" class="w-8 h-8 object-contain">
+          <!-- FIXED: menggunakan logo-64.webp -->
+          <img src="img/logo-64.webp" alt="Bianglala Group Logo" class="w-8 h-8 object-contain">
           <span class="font-semibold playfair text-white text-xl">Bianglala<span class="text-teal-400"> Group</span></span>
         </div>
-        <p class="text-sm text-gray-500 leading-relaxed">
+        <p class="text-sm text-gray-300 leading-relaxed">
           Solusi paspor, visa, perpustakaan, dan mutiara terpercaya di Lombok. Melayani dengan integritas dan profesionalisme.
         </p>
       </div>
@@ -352,51 +348,59 @@
       <div class="text-center md:text-left">
         <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Tautan Cepat</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="#about" class="hover:text-teal-400 transition">Tentang Kami</a></li>
-          <li><a href="#layanan" class="hover:text-teal-400 transition">Layanan</a></li>
-          <li><a href="#kontak" class="hover:text-teal-400 transition">Kontak & Lokasi</a></li>
-          <li><a href="https://wa.me/62895705410050" class="hover:text-teal-400 transition">WhatsApp</a></li>
+          <li><a href="#about" class="text-gray-300 hover:text-teal-400 transition">Tentang Kami</a></li>
+          <li><a href="#layanan" class="text-gray-300 hover:text-teal-400 transition">Layanan</a></li>
+          <li><a href="#kontak" class="text-gray-300 hover:text-teal-400 transition">Kontak & Lokasi</a></li>
+          <li><a href="https://wa.me/62895705410050" class="text-gray-300 hover:text-teal-400 transition">WhatsApp</a></li>
         </ul>
       </div>
       
-      <!-- Kolom 3: Kontak & Sosmed -->
+      <!-- Kolom 3: Kontak & Sosmed - FIXED: added aria-labels -->
       <div class="text-center md:text-left">
         <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Hubungi Kami</h4>
         <div class="space-y-2 text-sm">
           <p class="flex items-center justify-center md:justify-start gap-2">
             <i class="fab fa-whatsapp text-teal-400"></i> 
-            <a href="https://wa.me/62895705410050" class="hover:text-teal-400 transition">+62 895-7054-10050</a>
+            <a href="https://wa.me/62895705410050" class="text-gray-300 hover:text-teal-400 transition">+62 895-7054-10050</a>
           </p>
           <p class="flex items-center justify-center md:justify-start gap-2">
             <i class="fas fa-envelope text-teal-400"></i> 
-            <a href="mailto:bianglalasuryamega@gmail.com" class="hover:text-teal-400 transition">bianglalasuryamega@gmail.com</a>
+            <a href="mailto:bianglalasuryamega@gmail.com" class="text-gray-300 hover:text-teal-400 transition">bianglalasuryamega@gmail.com</a>
           </p>
           <p class="flex items-center justify-center md:justify-start gap-2">
             <i class="fas fa-map-marker-alt text-teal-400"></i> 
-            <span class="text-gray-500">Jl. Intan L No B19, Gunung Sari, Lombok Barat</span>
+            <span class="text-gray-400">Jl. Intan L No B19, Gunung Sari, Lombok Barat</span>
           </p>
         </div>
-        <!-- Social Icons -->
+        <!-- Social Icons - FIXED: added aria-labels for accessibility -->
         <div class="flex justify-center md:justify-start gap-4 mt-4">
-          <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
-            <i class="fab fa-instagram text-sm"></i>
+          <a href="https://www.instagram.com/bianglalagroup/" 
+             aria-label="Instagram Bianglala Group - Ikuti kami di Instagram"
+             class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition"
+             target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram text-sm" aria-hidden="true"></i>
           </a>
-          <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
-            <i class="fab fa-facebook-f text-sm"></i>
+          <a href="https://www.facebook.com/bianglalagroup" 
+             aria-label="Facebook Bianglala Group - Ikuti kami di Facebook"
+             class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition"
+             target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f text-sm" aria-hidden="true"></i>
           </a>
-          <a href="mailto:bianglalasuryamega@gmail.com" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
-            <i class="fas fa-envelope text-sm"></i>
+          <a href="mailto:bianglalasuryamega@gmail.com" 
+             aria-label="Email Bianglala Group - Kirim email ke kami"
+             class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 hover:text-white transition">
+            <i class="fas fa-envelope text-sm" aria-hidden="true"></i>
           </a>
         </div>
       </div>
     </div>
     
-    <!-- Bottom Bar: Copyright & Credit -->
+    <!-- Bottom Bar: Copyright & Credit - FIXED: improved contrast -->
     <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-6 text-xs">
-      <p class="text-gray-500">
+      <p class="text-gray-400">
         <i class="far fa-copyright text-teal-500 mr-1"></i> 2026 Bianglala Group. All rights reserved.
       </p>
-      <p class="text-gray-600">
+      <p class="text-gray-500">
         Created by <a href="https://lombokweb.site" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 transition">Lombokweb.site</a>
       </p>
     </div>
