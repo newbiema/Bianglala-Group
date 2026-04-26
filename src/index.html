@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -38,10 +38,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <!-- CSS non-blocking -->
-<link rel="preload" href="css/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="css/output.css">
-</noscript>
+<link rel="stylesheet" href="css/output.css">
 
 <!-- Font Awesome (optional) -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -423,16 +420,15 @@
 <script>
 (function () {
 
-  // =========================
   // MOBILE MENU
-  // =========================
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
-      const isHidden = mobileMenu.classList.toggle('hidden');
-      menuBtn.setAttribute('aria-expanded', !isHidden);
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', !isOpen);
     });
 
     document.querySelectorAll('#mobile-menu a').forEach(link => {
@@ -443,65 +439,33 @@
     });
   }
 
-
-  // =========================
-  // SMOOTH SCROLL
-  // =========================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-
-      const target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-
-
-  // =========================
-  // NAVBAR SCROLL (OPTIMIZED)
-  // =========================
+  // NAVBAR SCROLL
   const navbar = document.getElementById('navbar');
   let ticking = false;
 
-  function updateNavbar() {
+  function handleScroll() {
     if (!navbar) return;
-
-    if (window.scrollY > 20) {
-      navbar.classList.add('nav-scrolled');
-    } else {
-      navbar.classList.remove('nav-scrolled');
-    }
-
+    navbar.classList.toggle('nav-scrolled', window.scrollY > 20);
     ticking = false;
   }
 
   window.addEventListener('scroll', () => {
     if (!ticking) {
-      window.requestAnimationFrame(updateNavbar);
+      requestAnimationFrame(handleScroll);
       ticking = true;
     }
   }, { passive: true });
 
-
-  // =========================
-  // FADE-UP ANIMATION (NO REFLOW)
-  // =========================
+  // FADE-UP
   const fades = document.querySelectorAll('.fade-up');
 
   const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
+    for (const entry of entries) {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         obs.unobserve(entry.target);
       }
-    });
+    }
   }, {
     threshold: 0.1,
     rootMargin: '0px 0px -20px 0px'
@@ -509,33 +473,34 @@
 
   fades.forEach(el => observer.observe(el));
 
-
-  // =========================
-  // FORM → WHATSAPP
-  // =========================
+  // FORM WA
   const form = document.getElementById('quickForm');
 
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name = document.getElementById('nameInput')?.value.trim() || '';
-      const contact = document.getElementById('contactInput')?.value.trim() || '';
-      const msg = document.getElementById('msgInput')?.value.trim() || '';
+      const name = document.getElementById('nameInput')?.value.trim();
+      const contact = document.getElementById('contactInput')?.value.trim();
+      const msg = document.getElementById('msgInput')?.value.trim();
 
       if (!name || !contact) {
         alert('Mohon isi nama dan kontak (WA/Email)');
         return;
       }
 
-      const text =
-        `Halo Bianglala Group,%0A%0A` +
-        `Nama: ${encodeURIComponent(name)}%0A` +
-        `Kontak: ${encodeURIComponent(contact)}%0A` +
-        `Pertanyaan: ${encodeURIComponent(msg)}%0A%0A` +
-        `_Mohon informasi lebih lanjut. Terima kasih._`;
+      const text = new URLSearchParams({
+        text:
+`Halo Bianglala Group,
 
-      window.open(`https://wa.me/62895705410050?text=${text}`, '_blank');
+Nama: ${name}
+Kontak: ${contact}
+Pertanyaan: ${msg}
+
+Mohon informasi lebih lanjut. Terima kasih.`
+      }).toString();
+
+      window.open(`https://wa.me/62895705410050?${text}`, '_blank');
     });
   }
 
